@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Orders</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="/favicon.ico">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="index.html" class="navbar__logo">🛍️ DMart</a>
+    <form class="navbar__search" role="search" aria-label="Product search">
+      <input class="navbar__search-input" type="search" placeholder="Search products... 🔍" aria-label="Search products">
+          </form>
+    <div class="navbar__actions">
+      <a href="cart.html" class="navbar__icon" aria-label="Cart">🛒</a>
+      <button class="navbar__btn" id="navbar-login-btn">Login</button>
+      <button class="navbar__btn" id="navbar-logout-btn" style="display:none;">Logout</button>
+      <button class="navbar__toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </nav>
+
+  <main style="max-width:900px; margin:0 auto; padding:2rem 1rem;">
+    <h1 style="margin-bottom:2rem;">Admin - Orders</h1>
+    <div id="orders-container" class="orders-container"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" aria-label="Footer">
+    <div class="footer__links">
+      <a href="#" class="footer__link">About</a>
+      <a href="#" class="footer__link">Contact</a>
+      <a href="#" class="footer__link">FAQ</a>
+      <a href="#" class="footer__link">Terms</a>
+    </div>
+    <div class="footer__newsletter">
+      <form>
+        <input class="footer__input" type="email" placeholder="Subscribe to our newsletter" aria-label="Newsletter email">
+        <button class="footer__btn" type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div style="margin-top:1rem; color:#888; font-size:0.97rem;">&copy; 2024 DMart. All rights reserved.</div>
+  </footer>
+
+  <script src="js/adminOrders.js"></script>
+  <script src="js/session.js"></script>
+</body>
+</html> 
